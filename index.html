@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>seller page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul{
+            list-style:  none;
+        }
+
+        #outerBox{
+            border: 4px solid gray;
+            /* margin-top: 100px; */
+            margin: 100px auto;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div id = "outerBox" class="container ">
+        <h1 style="text-align: center;">Seller Admin Page</h1>
+
+        <form  action="">
+            <div class="row d-flex text-align-center justify-content-center">
+                <div class="col-lg-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="price">
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="product" class="form-label">Products</label>
+                    <select id="product" class="form-select">
+                        <option>soap</option>
+                        <option>facewash</option>
+                        <option>mobile</option>
+                        <option>laptop</option>
+                        <option>pizza</option>
+                        <option>samosa</option>
+                        <option>burger</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-3">
+                    <label for="type" class="form-label">Category
+                        <Table></Table>
+                    </label>
+                    <select id="type" class="form-select">
+                        <option>food items</option>
+                        <option>electronic items</option>
+                        <option>skincare</option>
+                    </select>
+                </div>
+
+                <div class="col col-lg  m-4">
+                    <button  id ="btn" type="button" class="btn btn-success">Add Product</button>
+                </div>
+
+        </form>
+
+    </div>
+
+        <div  class="container m-3"><h2 style="font-style: italic;">Products</h2></div>
+
+    <div class="row d-flex text-align-center justify-content-center">
+        
+        <div  class="col-lg-3 m-2">
+            <ul id="food items"><h4>Food Items</h3></ul>
+        </div>
+        <div class="col-lg-3 m-2">
+            <ul id="skincare"><h4>Skincare</h3></ul>
+
+        </div>
+        <div class="col-lg-3 m-2">
+            <ul id="electronic items"><h4>Electronic Items</h3></ul>
+
+        </div>
+    </div>
+    </div>
+
+
+  
+    <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.1/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>
